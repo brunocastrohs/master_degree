@@ -1,0 +1,999 @@
+/*GLOBAL*/
+html,body {
+	font: normal 12px verdana;
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+	overflow: hidden;
+	height: 100%;
+}
+
+p {
+	margin: 5px;
+}
+
+.settings {
+	background-image: url(../shared/icons/fam/folder_wrench.png);
+}
+
+.nav {
+	background-image: url(../shared/icons/fam/folder_go.png);
+}
+
+.page {
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+
+.clusterForm {
+	background-image: url(/ARGO/images/clusterForm.gif);
+}
+
+.byDistance {
+	background-image: url(/ARGO/images/byDistance.gif);
+}
+
+.byNumber {
+	background-image: url(/ARGO/images/byNumber.gif);
+}
+
+.byTime {
+	background-image: url(/ARGO/images/byTime.gif);
+}
+
+.gridAdd {
+	background: url('/ARGO/images/add.gif')
+}
+
+.db {
+	background: url('/ARGO/images/db.png')
+}
+
+.gridRemove {
+	background: url('/ARGO/images/remove.gif')
+}
+
+.gridUpdate {
+	background: url('/ARGO/images/update.gif')
+}
+
+.helpButton {
+	background: url('/ARGO/images/help.gif')
+}
+
+.menuItem {
+	background: url('/ARGO/images/menu_item.gif')
+}
+
+.menuReportItem {
+	background: url('/ARGO/images/report_menu.gif')
+}
+
+.menuXLSItem {
+	background: url('/ARGO/images/xls.gif')
+}
+
+.menuTXTItem {
+	background: url('/ARGO/images/txt.gif')
+}
+
+.menuItemGis {
+	background: url('/ARGO/images/gis.gif')
+}
+
+.menuItemLogin {
+	background: url('/ARGO/images/login.gif')
+}
+
+.menuItemLogout {
+	background: url('/ARGO/images/logout.gif')
+}
+
+.scrollItem {
+	background: url('/ARGO/images/scroll_item.gif')
+}
+
+.scrollReportItem {
+	background: url('/ARGO/images/report.gif')
+}
+
+.saveButton {
+	background: url('/ARGO/images/saveButton.gif')
+}
+
+.updateButton {
+	
+}
+
+.removeButton {
+	background: url('/ARGO/images/remove.gif')
+}
+
+.successMessage {
+	background: url('/ARGO/images/success_message.png') no-repeat;
+	width: 300px;
+	height: 80px;
+	float: left;
+	font-size: 16px;
+	color: green;
+	padding: 20px 0px 0 90px;
+}
+
+.warningMessage {
+	background: url('/ARGO/images/warning_message.png') no-repeat;
+	width: 300px;
+	height: 90px;
+	float: left;
+	font-size: 16px;
+	color: orange;
+	padding: 20px 0px 0 90px;
+}
+
+.errorMessage {
+	background: url('/ARGO/images/error_message.png') no-repeat;
+	width: 300px;
+	height: 90px;
+	float: left;
+	font-size: 16px;
+	color: red;
+	padding: 20px 0px 0 90px;
+}
+
+/*QueryForm*/
+#searchForm {
+	
+}
+
+#searchForm .label {
+	display: block;
+	width: 90%;
+	padding-top: 20px;
+}
+
+#searchForm #layerSelector {
+	width: 100%;
+	padding: 3px;
+}
+
+#searchForm .filterValueField {
+	width: 100%;
+	padding: 3px;
+}
+
+#searchForm .layerAttributes {
+	width: 100%;
+	padding: 3px;
+}
+
+#searchForm #filterButton,#searchForm #resetButton {
+	float: right;
+	margin-left: 5px;
+}
+
+#searchForm .sample {
+	color: gray;
+	font-size: 10px;
+	display:none;
+}
+
+#searchForm #addButton {
+	color: gray;
+	font-size: 12px;
+	border-bottom: 1px solid gray;
+	margin: 20px 0 20px 0;
+	height: 17px;
+	padding: 1px 1px 1px 1px;
+	background-image: url('/ARGO/images/add_off.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+#searchForm #addButton:hover {
+	border-bottom: 1px solid #9CAC74;
+	color: #9CAC74;
+	background-image: url('/ARGO/images/add_on.png');
+}
+
+#searchForm #dropButton {
+	color: gray;
+	font-size: 12px;
+	border-bottom: 1px solid gray;
+	margin: 20px 0 20px 0;
+	height: 17px;
+	padding: 1px 1px 1px 1px;
+	background-image: url('/ARGO/images/drop_off.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+#searchForm #dropButton:hover {
+	border-bottom: 1px solid #C14646;
+	color: #C14646;
+	background-image: url('/ARGO/images/drop_on.png');
+}
+
+#searchForm #showButton {
+	color: gray;
+	font-size: 12px;
+	border-bottom: 1px solid gray;
+	margin: 80px 0 80px 0;
+	height: 17px;
+	padding: 1px 1px 1px 1px;
+	background-image: url('/ARGO/images/show_off.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+#searchForm #showButton:hover {
+	border-bottom: 1px solid blue;
+	color: blue;
+	background-image: url('/ARGO/images/show_on.png');
+}
+
+#searchForm #records {
+	display: none;
+}
+
+/*GEOMFORM*/
+#geomForm {
+	width: 250px;
+	padding-left: 0px;
+}
+
+#geomForm .coordinate {
+	width: 100%;
+	padding-top: 15px;
+}
+
+#geomForm .label {
+	width: 100%;
+	padding-top: 10px;
+}
+
+#geomForm .coordinateValueField {
+	width: 70%;
+	float: right;
+	padding: 0px;
+}
+
+#geomForm .layerCoordinates {
+	width: 100%;
+	padding: 3px;
+}
+
+#geomForm #addButton {
+	color: gray;
+	font-size: 12px;
+	border-bottom: 1px solid gray;
+	margin: 20px 0 20px 0;
+	height: 17px;
+	padding: 1px 1px 1px 1px;
+	background-image: url('/ARGO/images/add_off.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+#geomForm #addButton:hover {
+	border-bottom: 1px solid #9CAC74;
+	color: #9CAC74;
+	background-image: url('/ARGO/images/add_on.png');
+}
+
+#geomForm #dropButton {
+	color: gray;
+	font-size: 12px;
+	border-bottom: 1px solid gray;
+	margin: 20px 0 20px 0;
+	height: 17px;
+	padding: 1px 1px 1px 1px;
+	background-image: url('/ARGO/images/drop_off.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+#geomForm #dropButton:hover {
+	border-bottom: 1px solid #C14646;
+	color: #C14646;
+	background-image: url('/ARGO/images/drop_on.png');
+}
+
+/*QueryGeomFORM*/
+#queryGISForm {
+	
+}
+
+#queryGISForm .label {
+	display: block;
+	width: 90%;
+	padding-top: 20px;
+}
+
+#queryGISForm #layerSelector {
+	width: 100%;
+	padding: 3px;
+}
+
+#queryGISForm .autoList {
+	background:#FFFFFF; 
+	position:absolute; 
+	width:368px;
+}
+
+#queryGISForm .autoItem {
+	float:left;
+	width:367px; 
+	padding-top:3px; 
+	border-bottom:0.5px dotted gray;
+	border-left:1px solid #CCCCCC;
+	border-right:1px solid #CCCCCC;
+}
+
+#queryGISForm .autoItem:hover {
+	background:#EEEEEE;
+	font:bolder;
+}
+
+#queryGISForm .autoItem a{
+	text-decoration:none;
+	color:black;
+}
+
+
+#queryGISForm .filterValueField {
+	width: 100%;
+	padding: 3px;
+}
+
+#queryGISForm .layerAttributes {
+	width: 100%;
+	padding: 3px;
+}
+
+#queryGISForm #filterButton,#queryGISForm #resetButton {
+	float: right;
+	margin-left: 5px;
+}
+
+#queryGISForm #pr {
+	visibility: hidden;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+#queryGISForm .at {
+	visibility: hidden;
+}
+
+#queryGISForm .sample {
+	color: gray;
+	font-size: 10px;
+	display:none;
+}
+
+#queryGISForm #addButton {
+	color: gray;
+	font-size: 12px;
+	border-bottom: 1px solid gray;
+	margin: 20px 0 20px 0;
+	height: 17px;
+	padding: 1px 1px 1px 1px;
+	background-image: url('/ARGO/images/add_off.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+#queryGISForm #addButton:hover {
+	border-bottom: 1px solid #9CAC74;
+	color: #9CAC74;
+	background-image: url('/ARGO/images/add_on.png');
+}
+
+#queryGISForm #dropButton {
+	color: gray;
+	font-size: 12px;
+	border-bottom: 1px solid gray;
+	margin: 20px 0 20px 0;
+	height: 17px;
+	padding: 1px 1px 1px 1px;
+	background-image: url('/ARGO/images/drop_off.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+#queryGISForm #dropButton:hover {
+	border-bottom: 1px solid #C14646;
+	color: #C14646;
+	background-image: url('/ARGO/images/drop_on.png');
+}
+
+#queryGISForm #showButton {
+	color: gray;
+	font-size: 12px;
+	border-bottom: 1px solid gray;
+	margin: 80px 0 80px 0;
+	height: 17px;
+	padding: 1px 1px 1px 1px;
+	background-image: url('/ARGO/images/show_off.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+#queryGISForm #showButton:hover {
+	border-bottom: 1px solid blue;
+	color: blue;
+	background-image: url('/ARGO/images/show_on.png');
+}
+
+#queryGISForm #records {
+	display: none;
+}
+
+
+#queryGISForm #applyFilter {
+	color: gray;
+	font-size: 9.5px;
+	border: 0;
+	margin: 10px 10px 10px 10px;
+	height: 0;
+	padding: 0;
+	float:right;
+}
+
+#queryGISForm #applyFilter:hover {
+	color: blue;
+}
+
+
+#queryGISForm #applyFilterBox {
+	margin: 0px 0 0px 10px;
+	padding: 0;
+}
+
+/*geocodForm*/
+#geocodForm {
+	
+}
+
+#geocodForm .label {
+	display: block;
+	width: 97%;
+	padding-top: 20px;
+}
+
+#geocodForm #layerSelector {
+	width: 100%;
+	padding: 3px;
+}
+
+#geocodForm .autoList {
+	background:#FFFFFF; 
+	position:absolute; 
+	width:368px;
+}
+
+#geocodForm .autoItem {
+	float:left;
+	width:367px; 
+	padding-top:3px; 
+	border-bottom:0.5px dotted gray;
+	border-left:1px solid #CCCCCC;
+	border-right:1px solid #CCCCCC;
+}
+
+#geocodForm .autoItem:hover {
+	background:#EEEEEE;
+	font:bolder;
+}
+
+#geocodForm .autoItem a{
+	text-decoration:none;
+	color:black;
+}
+
+
+#geocodForm .filterValueField {
+	width: 100%;
+	padding: 3px;
+}
+
+#geocodForm .layerAttributes {
+	width: 100%;
+	padding: 3px;
+}
+
+#geocodForm #filterGeocodButton,#geocodForm #resetGeocodButton {
+	float: right;
+	margin-left: 5px;
+}
+
+#geocodForm #pr {
+	visibility: hidden;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+#geocodForm .at {
+	visibility: hidden;
+}
+
+#geocodForm .sample {
+	color: gray;
+	font-size: 10px;
+	display:none;
+}
+
+
+table.gisRecords,table.gisRecords th,table.gisRecords td {
+	font-family: arial, tahoma, verdana;
+	font-size: 11px;
+	font-weight: 400;
+	line-height: 15px;
+	overflow: hidden;
+	margin: 0;
+	position: relative;
+	text-align: start;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+table.gisRecords {
+	background-color: #fff;
+	border: 1px solid #8DB2E3;
+}
+
+table.gisRecords th {
+	padding: 4px 3px 3px 3px;
+	text-transform: uppercase;
+	border-right: 0.8px solid #ccc;
+	background-image:
+		url('http://localhost:80/ARGO/libs/extjs/resources/images/default/grid/grid3-hrow.gif');
+	margin: 0;
+}
+
+table.gisRecords th:hover {
+	background-image:
+		url('http://localhost:80/ARGO/libs/extjs/resources/images/default/grid/grid3-hrow-over.gif');
+}
+
+table.gisRecords tr:hover {
+	background-image:
+		url('http://localhost:80/ARGO/libs/extjs/resources/images/default/grid/grid3-hrow.gif');
+}
+
+table.gisRecords td {
+	padding: 4px 3px 3px 3px;
+	border-right: 0.8px solid #ccc;
+	margin: 0;
+}
+
+/*SIG*/
+.layerTree {
+	background-image: url(/ARGO/images/layers.png);
+}
+
+.legends {
+	background-image: url(/ARGO/images/legends.png);
+}
+
+.tf {
+	background-image: url(/ARGO/images/tf.png);
+}
+
+.ft {
+	background-image: url(/ARGO/images/ft.png);
+}
+
+.search {
+	background-image: url(/ARGO/images/search.gif);
+}
+
+
+.report {
+	background-image: url(/ARGO/images/report_menu.gif);
+}
+
+.erase {
+	background-image: url(/ARGO/images/erase.gif);
+}
+
+
+.remove {
+	background-image: url(/ARGO/images/removeB.png);
+}
+
+.olControlOverviewMapMaximizeButton {
+	display: none;
+}
+
+.olControlOverviewMapMinimizeButton {
+	display: none;
+}
+
+.olControlOverviewMapElement {
+	background-color: #d8efe7 !important;
+}
+
+.olControlPanel {
+	margin-left: 55%;
+	padding: 2px 0px 2px 0px;
+	background-color: #fff;
+	border-right: solid 1px #999;
+	border-bottom: solid 1px #999;
+	border-radius: 5px;
+	background-image: url("/ARGO/images/sig_panel_bg.png");
+
+	/*width: 270px;*/
+}
+
+.olControlPanel div {
+	display: block;
+	width: 24px;
+	height: 24px;
+	float: left; /* remove this if you want a vertical toolbar  */
+	margin: 0px 2px 0px 2px;
+	background-repeat: no-repeat;
+}
+
+.olControlPanel div:hover {
+	background-color: #ADCED8;
+	border: 1px solid gray;
+	opacity: 0.7;
+	opacity: .70;
+	border-radius: 5px;
+}
+
+.olControlPanel .olControlReloadItemInactive {
+	background-image: url("/ARGO/images/reload.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.olControlPanel .olControlPanMapItemActive {
+	background-image: url("/ARGO/images/pan-off.png");
+	background-color: #D6E3FF;
+	border: 1px solid gray;
+	opacity: 0.7;
+	opacity: .70;
+	border-radius: 5px;
+}
+
+.olControlPanel .olControlPanMapItemInactive {
+	background-image: url("/ARGO/images/pan-off.png");
+}
+
+.olControlPanel .olControlZoomBoxItemInactive {
+	background-image: url("/ARGO/images/drag-rectangle-off.png");
+}
+
+.olControlPanel .olControlZoomBoxItemActive {
+	background-image: url("/ARGO/images/drag-rectangle-off.png");
+	background-color: #D6E3FF;
+	border: 1px solid gray;
+	opacity: 0.7;
+	opacity: .70;
+	border-radius: 5px;
+}
+
+.olControlPanel .olControlPrintItemInactive {
+	background-image: url("/ARGO/images/print.png");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+.olControlPanel .olControlSurrounderItemInactive {
+	background-image: url("/ARGO/images/surround_off.png");
+	background-position: center center;
+}
+
+.olControlPanel .olControlZoomToMaxExtentItemInactive {
+	background-image: url("/ARGO/images/zoom-world-mini.png");
+}
+
+.olControlPanel .olControlMinPathItemInactive {
+	background-image: url("/ARGO/images/min_path_off.png");
+	background-position: center center;
+}
+
+.olControlPanel .olControlFeatureInfoItemActive {
+	background-image: url("/ARGO/images/query_mode_off.png");
+	background-color: #D6E3FF;
+	border: 1px solid gray;
+	opacity: 0.7;
+	opacity: .70;
+	border-radius: 5px;
+}
+
+.olControlPanel .olControlFeatureInfoItemInactive {
+	background-image: url("/ARGO/images/query_mode_off.png");
+}
+
+.olControlPanel .olControlEdgeMergerItemActive {
+	background-image: url("/ARGO/images/edge_mode.png");
+	background-color: #D6E3FF;
+	background-position:center center;
+	border: 1px solid gray;
+	opacity: 0.7;
+	opacity: .70;
+	border-radius: 5px;
+}
+
+.olControlPanel .olControlEdgeMergerItemInactive {
+	background-image: url("/ARGO/images/edge_mode.png");
+	background-position:center center;
+}
+
+.olControlPanel .olControlRoutMergerItemActive {
+	background-image: url("/ARGO/images/rout_merger.png");
+	background-color: #D6E3FF;
+	background-position:center center;
+	border: 1px solid gray;
+	opacity: 0.7;
+	opacity: .70;
+	border-radius: 5px;
+}
+
+.olControlPanel .olControlRoutMergerItemInactive {
+	background-image: url("/ARGO/images/rout_merger.png");
+	background-position:center center;
+}
+
+.olControlPanel .olControlDrawGeoCodBoxItemActive {
+	background-image: url("/ARGO/images/draw_polygon.png");
+	background-color: #D6E3FF;
+	background-position:center center;
+	border: 1px solid gray;
+	opacity: 0.7;
+	opacity: .70;
+	border-radius: 5px;
+}
+
+.olControlPanel .olControlDrawGeoCodBoxItemInactive {
+	background-image: url("/ARGO/images/draw_polygon.png");
+	background-position:center center;
+}
+
+.olControlPanel .olControlPopUpItemActive {
+	background-image: url("/ARGO/images/popup_off.png");
+	background-color: #A99EFF;
+	border: 1px solid gray;
+	opacity: 0.7;
+	opacity: .70;
+	border-radius: 5px;
+}
+
+.olControlPanel .olControlPopUpItemInactive {
+	background-image: url("/ARGO/images/popup_off.png");
+}
+
+.olControlPanel .olControlZoomOutBoxItemActive {
+	background-image: url("/ARGO/images/zoom_out_off.png");
+	background-color: #D6E3FF;
+	border: 1px solid gray;
+	opacity: 0.7;
+	opacity: .70;
+	border-radius: 5px;
+}
+
+.olControlPanel .olControlZoomOutBoxItemInactive {
+	background-image: url("/ARGO/images/zoom_out_off.png");
+}
+
+.olControlPanel .olControlMeasureDistanceItemInactive {
+	background-image: url( "/ARGO/images/distance_off.png" );
+}
+
+.olControlPanel .olControlMeasureDistanceItemActive {
+	background-image: url( "/ARGO/images/distance_off.png" );
+	background-color: #D6E3FF;
+	border: 1px solid gray;
+	opacity: 0.7;
+	opacity: .70;
+	border-radius: 5px;
+}
+
+.olControlPanel .olControlMeasureAreaItemActive {
+	background-image: url( "/ARGO/images/area_off.png" );
+	background-color: #D6E3FF;
+	border: 1px solid gray;
+	opacity: 0.7;
+	opacity: .70;
+	border-radius: 5px;
+}
+
+.olControlPanel .olControlMeasureAreaItemInactive {
+	background-image: url( "/ARGO/images/area_off.png" );
+}
+
+.olControlPanel .olControlOverviewMapItemActive {
+	background-image: url( "/ARGO/images/overview_off.png" );
+	background-color: #D6E3FF;
+	border: 1px solid gray;
+	opacity: 0.7;
+	opacity: .70;
+	border-radius: 5px;
+}
+
+.olControlPanel .olControlOverviewMapItemInactive {
+	background-image: url( "/ARGO/images/overview_off.png" );
+}
+
+/*BUGS*/
+#searchForm input[type="button"] {
+	border: 1px solid #C1C1C1;
+	border-radius: 5px;
+	float: left;
+	color: #00526B;
+	text-decoration: none;
+	font: 12px verdana;
+	padding: 0px 10px 2px 20px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	height: 22px;
+}
+
+#searchForm input[type="button"]:hover {
+	border: 1px solid #6A98A6;
+	border-radius: 5px;
+	opacity: 0.9;
+	opacity: 0.9;
+}
+
+#queryGISForm input[type="button"] {
+	border: 1px solid #C1C1C1;
+	border-radius: 5px;
+	float: left;
+	color: #00526B;
+	text-decoration: none;
+	font: 12px verdana;
+	padding: 0px 10px 2px 20px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	height: 22px;
+}
+
+#queryGISForm input[type="button"]:hover {
+	border: 1px solid #6A98A6;
+	border-radius: 5px;
+	opacity: 0.9;
+	opacity: 0.9;
+}
+
+#geocodForm input[type="button"] {
+	border: 1px solid #C1C1C1;
+	border-radius: 5px;
+	float: right;
+	color: #00526B;
+	text-decoration: none;
+	font: 12px verdana;
+	padding: 0px 10px 2px 20px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	height: 22px;
+}
+
+#geocodForm input[type="button"]:hover {
+	border: 1px solid #6A98A6;
+	border-radius: 5px;
+	opacity: 0.9;
+	opacity: 0.9;
+}
+
+#pr {
+	visibility: hidden;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+.olLayerGoogleV3 {
+	display: none;
+}
+
+.x-panel-body.x-panel-body-noheader.x-panel-body-noborder.x-form{
+	background-color:#DFE8F6;
+	 margin:10px;
+	 }
+
+/*CLSUTER*/
+.clusterHead{
+	padding-top:1px;
+	float:left;
+	width:99.5%;
+	border-bottom:0.5px dotted gray;
+	
+}
+
+.clusterTitle{
+	float:left;
+	width:19%;
+	border-right:0.5px dotted gray;
+}
+
+.clusterTitleS{
+	float:left;
+	width:40%;
+	border-right:0.5px dotted gray;
+}
+
+
+.clusterItem{
+	padding-top:5px;
+	float:left;
+	width:99.5%;
+	border-bottom:0.5px dotted gray;
+}
+
+.clusterItem:hover{
+	background:#E7E7E7;
+	border-bottom:2px solid gray;
+}
+
+.clusterDescription{
+	float:left;
+	padding-left:5px;
+	margin-top:2px;
+	width:250px;	
+}
+
+.clusterPathButton{
+	float:right;
+	width:20px;
+	height:20px;
+	margin-left:5px;
+}
+
+.clusterPathButton:hover{
+	background:url('/ARGO/images/buttonHover.gif');
+}
+
+.clusterNumberButton{
+	float:right;
+	width:20px;
+	height:20px;
+	margin-left:5px;
+}
+
+.clusterNumberButton:hover{
+	background:url('/ARGO/images/buttonHover.gif');
+}
+
+.clusterClientButton{
+	float:right;
+	width:20px;
+	height:20px;
+	margin-left:5px;
+}
+
+.clusterClientButton:hover{
+	background:url('/ARGO/images/buttonHover.gif');
+}
+
+.subClusterScreenButton{
+	float:right;
+	width:20px;
+	height:20px;
+	margin-left:5px;
+}
+
+.subClusterScreenButton:hover{
+	background:url('/ARGO/images/buttonHover.gif');
+}
+
+.clusterCheck{
+	float:left;
+	margin-left:3px;
+	margin-top:2px;
+}
+
+/*GEOCOD*/
+
+.geocodString{
+	color:blue;
+	text-decoration: underline;
+	cursor:pointer;
+}

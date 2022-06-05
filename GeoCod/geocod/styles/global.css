@@ -1,0 +1,655 @@
+/*GLOBAL*/
+html,body {
+	font: normal 12px verdana;
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+	overflow: hidden;
+	height: 100%;
+}
+
+p {
+	margin: 5px;
+}
+
+.settings {
+	background-image: url(../shared/icons/fam/folder_wrench.png);
+}
+
+.nav {
+	background-image: url(../shared/icons/fam/folder_go.png);
+}
+
+.page {
+	width: 100%;
+	height: 100%;
+	border: 0;
+}
+
+.gridAdd {
+	background: url('/GeoCod/images/add.gif')
+}
+
+.gridRemove {
+	background: url('/GeoCod/images/remove.gif')
+}
+
+.gridUpdate {
+	background: url('/GeoCod/images/update.gif')
+}
+
+.menuItem {
+	background: url('/GeoCod/images/menu_item.gif')
+}
+
+.menuReportItem {
+	background: url('/GeoCod/images/report_menu.gif')
+}
+
+.menuItemGis {
+	background: url('/GeoCod/images/gis.gif')
+}
+
+.menuItemLogin {
+	background: url('/GeoCod/images/login.gif')
+}
+
+.menuItemLogout {
+	background: url('/GeoCod/images/logout.gif')
+}
+
+.scrollItem {
+	background: url('/GeoCod/images/scroll_item.gif')
+}
+
+.scrollReportItem {
+	background: url('/GeoCod/images/report.gif')
+}
+
+.saveButton {
+	background: url('/GeoCod/images/saveButton.gif')
+}
+
+.updateButton {
+	
+}
+
+.removeButton {
+	background: url('/GeoCod/images/remove.gif')
+}
+
+.successMessage {
+	background: url('/GeoCod/images/success_message.png') no-repeat;
+	width: 300px;
+	height: 80px;
+	float: left;
+	font-size: 16px;
+	color: green;
+	padding: 20px 0px 0 90px;
+}
+
+.warningMessage {
+	background: url('/GeoCod/images/warning_message.png') no-repeat;
+	width: 300px;
+	height: 90px;
+	float: left;
+	font-size: 16px;
+	color: orange;
+	padding: 20px 0px 0 90px;
+}
+
+.errorMessage {
+	background: url('/GeoCod/images/error_message.png') no-repeat;
+	width: 300px;
+	height: 90px;
+	float: left;
+	font-size: 16px;
+	color: red;
+	padding: 20px 0px 0 90px;
+}
+
+/*QueryForm*/
+#searchForm {
+	
+}
+
+#searchForm .label {
+	display: block;
+	width: 90%;
+	padding-top: 20px;
+}
+
+#searchForm #layerSelector {
+	width: 100%;
+	padding: 3px;
+}
+
+#searchForm .filterValueField {
+	width: 100%;
+	padding: 3px;
+}
+
+#searchForm .layerAttributes {
+	width: 100%;
+	padding: 3px;
+}
+
+#searchForm #filterButton,#searchForm #resetButton {
+	float: right;
+	margin-left: 5px;
+}
+
+#pr {
+	visibility: hidden;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+#searchForm .sample {
+	color: gray;
+	font-size: 10px;
+}
+
+#searchForm #addButton {
+	color: gray;
+	font-size: 12px;
+	border-bottom: 1px solid gray;
+	margin: 20px 0 20px 0;
+	height: 17px;
+	padding: 1px 1px 1px 1px;
+	background-image: url('/GeoCod/images/add_off.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+#searchForm #addButton:hover {
+	border-bottom: 1px solid #9CAC74;
+	color: #9CAC74;
+	background-image: url('/GeoCod/images/add_on.png');
+}
+
+#searchForm #dropButton {
+	color: gray;
+	font-size: 12px;
+	border-bottom: 1px solid gray;
+	margin: 20px 0 20px 0;
+	height: 17px;
+	padding: 1px 1px 1px 1px;
+	background-image: url('/GeoCod/images/drop_off.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+#searchForm #dropButton:hover {
+	border-bottom: 1px solid #C14646;
+	color: #C14646;
+	background-image: url('/GeoCod/images/drop_on.png');
+}
+
+#searchForm #showButton {
+	color: gray;
+	font-size: 12px;
+	border-bottom: 1px solid gray;
+	margin: 80px 0 80px 0;
+	height: 17px;
+	padding: 1px 1px 1px 1px;
+	background-image: url('/GeoCod/images/show_off.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+#searchForm #showButton:hover {
+	border-bottom: 1px solid blue;
+	color: blue;
+	background-image: url('/GeoCod/images/show_on.png');
+}
+
+#searchForm #records {
+	display: none;
+}
+
+/*GEOMFORM*/
+#geomForm {
+	width: 250px;
+	padding-left: 0px;
+}
+
+#geomForm .coordinate {
+	width: 100%;
+	padding-top: 15px;
+}
+
+#geomForm .label {
+	width: 100%;
+	padding-top: 10px;
+}
+
+#geomForm .coordinateValueField {
+	width: 70%;
+	float: right;
+	padding: 0px;
+}
+
+#geomForm .layerCoordinates {
+	width: 100%;
+	padding: 3px;
+}
+
+#geomForm #addButton {
+	color: gray;
+	font-size: 12px;
+	border-bottom: 1px solid gray;
+	margin: 20px 0 20px 0;
+	height: 17px;
+	padding: 1px 1px 1px 1px;
+	background-image: url('/GeoCod/images/add_off.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+#geomForm #addButton:hover {
+	border-bottom: 1px solid #9CAC74;
+	color: #9CAC74;
+	background-image: url('/GeoCod/images/add_on.png');
+}
+
+#geomForm #dropButton {
+	color: gray;
+	font-size: 12px;
+	border-bottom: 1px solid gray;
+	margin: 20px 0 20px 0;
+	height: 17px;
+	padding: 1px 1px 1px 1px;
+	background-image: url('/GeoCod/images/drop_off.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+#geomForm #dropButton:hover {
+	border-bottom: 1px solid #C14646;
+	color: #C14646;
+	background-image: url('/GeoCod/images/drop_on.png');
+}
+
+/*QueryGeomFORM*/
+#queryGISForm {
+	
+}
+
+#queryGISForm .label {
+	display: block;
+	width: 90%;
+	padding-top: 20px;
+}
+
+#queryGISForm #layerSelector {
+	width: 100%;
+	padding: 3px;
+}
+
+#queryGISForm .filterValueField {
+	width: 100%;
+	padding: 3px;
+}
+
+#queryGISForm .layerAttributes {
+	width: 100%;
+	padding: 3px;
+}
+
+#queryGISForm #filterButton,#queryGISForm #resetButton {
+	float: right;
+	margin-left: 5px;
+}
+
+#queryGISForm #pr {
+	visibility: hidden;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+#queryGISForm .sample {
+	color: gray;
+	font-size: 10px;
+}
+
+#queryGISForm #addButton {
+	color: gray;
+	font-size: 12px;
+	border-bottom: 1px solid gray;
+	margin: 20px 0 20px 0;
+	height: 17px;
+	padding: 1px 1px 1px 1px;
+	background-image: url('/GeoCod/images/add_off.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+#queryGISForm #addButton:hover {
+	border-bottom: 1px solid #9CAC74;
+	color: #9CAC74;
+	background-image: url('/GeoCod/images/add_on.png');
+}
+
+#queryGISForm #dropButton {
+	color: gray;
+	font-size: 12px;
+	border-bottom: 1px solid gray;
+	margin: 20px 0 20px 0;
+	height: 17px;
+	padding: 1px 1px 1px 1px;
+	background-image: url('/GeoCod/images/drop_off.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+#queryGISForm #dropButton:hover {
+	border-bottom: 1px solid #C14646;
+	color: #C14646;
+	background-image: url('/GeoCod/images/drop_on.png');
+}
+
+#queryGISForm #showButton {
+	color: gray;
+	font-size: 12px;
+	border-bottom: 1px solid gray;
+	margin: 80px 0 80px 0;
+	height: 17px;
+	padding: 1px 1px 1px 1px;
+	background-image: url('/GeoCod/images/show_off.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+#queryGISForm #showButton:hover {
+	border-bottom: 1px solid blue;
+	color: blue;
+	background-image: url('/GeoCod/images/show_on.png');
+}
+
+#queryGISForm #records {
+	display: none;
+}
+
+table.gisRecords,table.gisRecords th,table.gisRecords td {
+	font-family: arial, tahoma, verdana;
+	font-size: 11px;
+	font-weight: 400;
+	line-height: 15px;
+	overflow: hidden;
+	margin: 0;
+	position: relative;
+	text-align: start;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+table.gisRecords {
+	background-color: #fff;
+	border: 1px solid #8DB2E3;
+	width: 100%;
+}
+
+table.gisRecords th {
+	padding: 4px 3px 3px 3px;
+	text-transform: uppercase;
+	border-right: 0.8px solid #ccc;
+	background-image:
+		url('http://localhost:8090/GeoCod/libs/extjs/resources/images/default/grid/grid3-hrow.gif');
+	margin: 0;
+}
+
+table.gisRecords th:hover {
+	background-image:
+		url('http://localhost:8090/GeoCod/libs/extjs/resources/images/default/grid/grid3-hrow-over.gif');
+}
+
+table.gisRecords tr:hover {
+	background-image:
+		url('http://localhost:8090/GeoCod/libs/extjs/resources/images/default/grid/grid3-hrow.gif');
+}
+
+table.gisRecords td {
+	padding: 4px 3px 3px 3px;
+	border-right: 0.8px solid #ccc;
+	margin: 0;
+}
+
+/*SIG*/
+.layerTree {
+	background-image: url(/GeoCod/images/layers.png);
+}
+
+.legends {
+	background-image: url(/GeoCod/images/legends.png);
+}
+
+.phoneSearch {
+	background-image: url(/GeoCod/images/phoneSearch.gif);
+}
+
+.levenshtainSearch {
+	background-image: url(/GeoCod/images/levenshtainSearch.gif);
+}
+
+.search {
+	background-image: url(/GeoCod/images/search.gif);
+}
+
+.remove {
+	background-image: url(/GeoCod/images/removeB.png);
+}
+
+.olControlOverviewMapMaximizeButton {
+	display: none;
+}
+
+.olControlOverviewMapMinimizeButton {
+	display: none;
+}
+
+.olControlOverviewMapElement {
+	background-color: #d8efe7 !important;
+}
+
+.olControlPanel {
+	margin-left: 65%;
+	padding: 2px 0px 2px 0px;
+	background-color: #fff;
+	border-right: solid 1px #999;
+	border-bottom: solid 1px #999;
+	-moz-border-radius: 5px;
+	background-image: url("/GeoCod/images/sig_panel_bg.png");
+
+	/*width: 270px;*/
+}
+
+.olControlPanel div {
+	display: block;
+	width: 24px;
+	height: 24px;
+	float: left; /* remove this if you want a vertical toolbar  */
+	margin: 0px 2px 0px 2px;
+	background-repeat: no-repeat;
+}
+
+.olControlPanel div:hover {
+	background-color: #ADCED8;
+	border: 1px solid gray;
+	-moz-opacity: 0.7;
+	opacity: .70;
+	-moz-border-radius: 5px;
+}
+
+.olControlPanel .olControlReloadItemInactive {
+	background-image: url("/GeoCod/images/reload.png");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.olControlPanel .olControlPanMapItemActive {
+	background-image: url("/GeoCod/images/pan-off.png");
+	background-color: #D6E3FF;
+	border: 1px solid gray;
+	-moz-opacity: 0.7;
+	opacity: .70;
+	-moz-border-radius: 5px;
+}
+
+.olControlPanel .olControlPanMapItemInactive {
+	background-image: url("/GeoCod/images/pan-off.png");
+}
+
+.olControlPanel .olControlZoomBoxItemInactive {
+	background-image: url("/GeoCod/images/drag-rectangle-off.png");
+}
+
+.olControlPanel .olControlZoomBoxItemActive {
+	background-image: url("/GeoCod/images/drag-rectangle-off.png");
+	background-color: #D6E3FF;
+	border: 1px solid gray;
+	-moz-opacity: 0.7;
+	opacity: .70;
+	-moz-border-radius: 5px;
+}
+
+.olControlPanel .olControlPrintItemInactive {
+	background-image: url("/GeoCod/images/print.png");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.olControlPanel .olControlSurrounderItemInactive {
+	background-image: url("/GeoCod/images/surround_off.png");
+	background-position: center center;
+}
+
+.olControlPanel .olControlZoomToMaxExtentItemInactive {
+	background-image: url("/GeoCod/images/zoom-world-mini.png");
+}
+
+.olControlPanel .olControlMinPathItemInactive {
+	background-image: url("/GeoCod/images/min_path_off.png");
+	background-position: center center;
+}
+
+.olControlPanel .olControlFeatureInfoItemActive {
+	background-image: url("/GeoCod/images/query_mode_off.png");
+	background-color: #D6E3FF;
+	border: 1px solid gray;
+	-moz-opacity: 0.7;
+	opacity: .70;
+	-moz-border-radius: 5px;
+}
+
+.olControlPanel .olControlFeatureInfoItemInactive {
+	background-image: url("/GeoCod/images/query_mode_off.png");
+}
+
+.olControlPanel .olControlPopUpItemActive {
+	background-image: url("/GeoCod/images/popup_off.png");
+	background-color: #A99EFF;
+	border: 1px solid gray;
+	-moz-opacity: 0.7;
+	opacity: .70;
+	-moz-border-radius: 5px;
+}
+
+.olControlPanel .olControlPopUpItemInactive {
+	background-image: url("/GeoCod/images/popup_off.png");
+}
+
+.olControlPanel .olControlZoomOutBoxItemActive {
+	background-image: url("/GeoCod/images/zoom_out_off.png");
+	background-color: #D6E3FF;
+	border: 1px solid gray;
+	-moz-opacity: 0.7;
+	opacity: .70;
+	-moz-border-radius: 5px;
+}
+
+.olControlPanel .olControlZoomOutBoxItemInactive {
+	background-image: url("/GeoCod/images/zoom_out_off.png");
+}
+
+.olControlPanel .olControlMeasureDistanceItemInactive {
+	background-image: url( "/GeoCod/images/distance_off.png" );
+}
+
+.olControlPanel .olControlMeasureDistanceItemActive {
+	background-image: url( "/GeoCod/images/distance_off.png" );
+	background-color: #D6E3FF;
+	border: 1px solid gray;
+	-moz-opacity: 0.7;
+	opacity: .70;
+	-moz-border-radius: 5px;
+}
+
+.olControlPanel .olControlMeasureAreaItemActive {
+	background-image: url( "/GeoCod/images/area_off.png" );
+	background-color: #D6E3FF;
+	border: 1px solid gray;
+	-moz-opacity: 0.7;
+	opacity: .70;
+	-moz-border-radius: 5px;
+}
+
+.olControlPanel .olControlMeasureAreaItemInactive {
+	background-image: url( "/GeoCod/images/area_off.png" );
+}
+
+.olControlPanel .olControlOverviewMapItemActive {
+	background-image: url( "/GeoCod/images/overview_off.png" );
+	background-color: #D6E3FF;
+	border: 1px solid gray;
+	-moz-opacity: 0.7;
+	opacity: .70;
+	-moz-border-radius: 5px;
+}
+
+.olControlPanel .olControlOverviewMapItemInactive {
+	background-image: url( "/GeoCod/images/overview_off.png" );
+}
+
+/*BUGS*/
+#searchForm input[type="button"] {
+	border: 1px solid #C1C1C1;
+	-moz-border-radius: 5px;
+	float: left;
+	color: #00526B;
+	text-decoration: none;
+	font: 12px verdana;
+	padding: 0px 10px 2px 20px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	height: 22px;
+}
+
+#searchForm input[type="button"]:hover {
+	border: 1px solid #6A98A6;
+	-moz-border-radius: 5px;
+	-moz-opacity: 0.9;
+	opacity: 0.9;
+}
+
+#queryGISForm input[type="button"] {
+	border: 1px solid #C1C1C1;
+	-moz-border-radius: 5px;
+	float: left;
+	color: #00526B;
+	text-decoration: none;
+	font: 12px verdana;
+	padding: 0px 10px 2px 20px;
+	background-repeat: no-repeat;
+	background-position: left center;
+	height: 22px;
+}
+
+#queryGISForm input[type="button"]:hover {
+	border: 1px solid #6A98A6;
+	-moz-border-radius: 5px;
+	-moz-opacity: 0.9;
+	opacity: 0.9;
+}
